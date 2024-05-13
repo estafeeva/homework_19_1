@@ -41,7 +41,7 @@
             height: -webkit-fill-available;
             max-height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
+            overflow-y: auto;
         }
 
         .b-example-divider {
@@ -281,13 +281,87 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-success">Купить</button>
                         </div>
+
                     </div>
+
+                </div>
+                <div class="col-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Имя</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </main>
+        <header>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
+            </div>
+        </header>
+        <div class="mx-auto text-center">
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                    Как купить?
+                </button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    Как доставить?
+                </button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    Какая гарантия?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample1">
+                <div class="card card-body">
+                    Позвоните нам.
                 </div>
             </div>
-        </main>
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body">
+                    Транспортной компанией или курьером.
+                </div>
+            </div>
+            <div class="collapse" id="collapseExample3">
+                <div class="card card-body">
+                    1 год.
+                </div>
+            </div>
+        </div>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Название товара</th>
+      <th scope="col">Цена за штуку</th>
+      <th scope="col">Количество</th>
+      <th scope="col">итоговая сумма</th>
+      <th scope="col">Статус заказа</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Мяч</td>
+      <td>300р.</td>
+      <td>2</td>
+      <td>600р.</td>
+      <td class="table-primary">новый</td>
+    </tr>
 
+  </tbody>
+</table>
     </div>
 
 </main>
